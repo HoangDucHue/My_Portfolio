@@ -5,6 +5,7 @@
     text-decoration: none;
     scroll-behavior: smooth;
     font-family: 'Poppins', sans-serif;
+    scroll-padding-top: 100px;
 }
 
 :root {
@@ -12,7 +13,9 @@
     --second-bg--color: #101010;
     --text-color: white;
     --main-color: #ea580c;
-    scroll-padding-top: 100px;
+    --light-bg: #f8f9fa;
+    --light-text: #212529;
+    --light-second-bg: #e9ecef;
 }
 
 html {
@@ -24,6 +27,7 @@ body {
     background-color: var(--bg--color);
     color: var(--text-color);
     overflow-x: hidden;
+    transition: background-color 0.5s ease, color 0.3s ease;
 }
 
 .header {
@@ -480,6 +484,42 @@ section {
     font-size: 15px;
 }
 
+[data-theme="light"] {
+    --bg--color: var(--light-bg);
+    --second-bg--color: var(--light-second-bg);
+    --text-color: var(--light-text);
+}
+
+.theme-btn {
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    margin-left: 2rem;
+    color: var(--main-color);
+    transition: transform 0.3s ease;
+}
+
+.theme-btn:hover {
+    transform: rotate(30deg);
+}
+
+.services h2,
+.projects h2,
+.contact h2 {
+    color: var(--text-color); 
+}
+
+.gradient-btn {
+    color: var(--text-color);
+}
+
+.contact form input,
+.contact form textarea {
+    background: var(--second-bg--color);
+    color: var(--text-color);
+}
+
 /* ===== BREAKPOINTS ===== */
 @media (max-width: 1200px) {
     html {
@@ -594,5 +634,15 @@ section {
 
     .about {
         gap: 5rem;
+    }
+
+    .service-info p {
+        font-size: 1.8rem;
+        font-weight: 500;
+        line-height: 1.8;
+        text-align: justify;
+        hyphens: auto;
+        margin-bottom: 1.5rem;
+        max-width: 100%;
     }
 }
