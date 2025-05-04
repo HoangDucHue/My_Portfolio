@@ -12,6 +12,7 @@
     --second-bg--color: #101010;
     --text-color: white;
     --main-color: #ea580c;
+    scroll-padding-top: 100px;
 }
 
 html {
