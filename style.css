@@ -426,8 +426,8 @@ section {
 
 .contact {
     background-color: var(--bg--color);
-    padding-top: 10px;
-    padding-bottom: 2rem
+    padding: 10rem 15% 2rem;
+    min-height: auto;
 }
 
 .contact h2 {
@@ -440,7 +440,7 @@ section {
     align-items: center;
     justify-content: center;
     gap: 3rem;
-    margin: 5rem 0;
+    /* margin: 5rem 0; */
     text-align: center;
     margin-bottom: 2rem;
 }
