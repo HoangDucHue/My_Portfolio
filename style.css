@@ -550,7 +550,7 @@ section {
 }
 
 .info-list li {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
     margin-bottom: 1.2rem;
     display: flex;
     align-items: center;
@@ -580,6 +580,7 @@ section {
 }
 
 .info-list li span {
+    font-size: inherit !important;
     font-weight: 600;
     margin-right: 0.5rem;
 }
